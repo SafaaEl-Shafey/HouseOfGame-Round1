@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Choose any Game</title>
+<link href="chooseGameStyle.css" rel="stylesheet">
+<link href="../bootstrap/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="parent">
+	<div class="title  display-1 font text-center">
+		<span>Choose <span class="any"> any </span> Game</span>
+	</div>
+	<div class="container">
+	<div class="d-flex flex-row flex-wrap justify-content-between">
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="maze();">
+					<img src="https://miro.medium.com/max/1000/1*RXFbBotkqvKfavl4Qgo3wA.jpeg" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Maze Game</div>
+					</div>
+				  </div>
+	
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="memoryGame();">
+					<img src="https://lh3.googleusercontent.com/A22v4si6O--GnvuphpwsQVZ7_8Mlho-To-OTJLJUt0dTJZWd1g6T-0AdlFvNgGei_rE" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Memory Game</div>
+					</div>
+				  </div>
+
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="Xo();">
+					<img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/d07c1db617a36898b5e8c71013d228d11003eb36d7150b7abfe988fe097c7d66.png" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Tic-Tac-Toe </div>
+					</div>
+				  </div>
+
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="color();">
+					<img src="https://image.winudf.com/v2/image1/c29ydC5iYWxsLnB1enpsZS5jb2xvci5tYXRjaC5wdXp6bGUuc29ydGluZ19pY29uXzE2MzYwNjY2NjNfMDA0/icon.png?w=&fakeurl=1" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Water Color</div>
+					</div>
+				  </div>
+
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="sort();">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/15-puzzle_magical.svg/800px-15-puzzle_magical.svg.png" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Square puzzle</div>
+					</div>
+				  </div>
+			
+				<div class="card element bg-transparent border border-2 border-white rounded-5"  onclick="globbletBoard();">
+					<img src="https://media.hedeya.com/catalog/product/cache/0ee050c3ffc3555709b9bb6062f4d7e9/2/3/2390914.jpg" class="card-img-top icon" >
+					<div class="card-body">
+					  <div class="card-title text-center text-white h2 font">Globblet Board</div>
+					</div>
+				  </div>
+				</div><!-- end of flex-->
+	</div><!-- end of container -->
+
+
+	<div class="text-end mx-2">
+		<button onclick="back();" class="back h1 text-white p-4 text-center border border-3 border-white">Back</button>
+	</div>
+	
+
+
+<script src="../bootstrap/js-bootstrap/bootstrap.min.js"></script>
+<script src="chooseGameJs.js"></script>
+</body>
+</html>

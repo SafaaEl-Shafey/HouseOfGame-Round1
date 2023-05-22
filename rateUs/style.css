@@ -1,0 +1,88 @@
+.font{
+	font-family: fantasy;
+}
+
+
+.title{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	font-size:8em;
+	text-align: center;
+	color:rgb(204, 255, 204,.7);
+	text-shadow: 2px 2px 4px black;
+}
+
+.parent{
+	background-image: url("../images/bg1.jpg");
+	background-size: cover;
+}
+
+.us{
+	color:rgb(255, 255, 0,.9);
+}
+
+.starContainer{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+}
+.rate{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	}
+
+.star{
+	width:8vh;
+	height: 8vh;
+}
+
+.end{
+	display: flex;
+	width: 100%;
+	justify-content: right;
+	align-items: center;
+	height: 20vh;
+}
+
+.back{
+	font-size:4em;
+	color:white;
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	padding: 10px;
+	background-color: rgb(122, 179, 161,.2);
+	text-align: center;
+	border-radius: 25px;
+}
+
+
+.send{
+	font-size:4em;
+	color:black;
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	padding: 10px;
+	background-color: rgb(122, 179, 161,.2);
+	text-align: center;
+	border-radius: 25px;
+	background-color:rgb(255, 255, 0,.9);
+}
+
+.message{
+	width: 50%;
+	height: 20vh;
+	font-size:4em;
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	padding: 10px;
+	background-color: rgb(122, 179, 161,.2);
+	border-radius: 25px;
+}

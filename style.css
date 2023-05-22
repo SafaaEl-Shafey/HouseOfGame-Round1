@@ -1,0 +1,41 @@
+.parent{
+	background-image: url("../images/bg1.jpg");
+	height: 100%;
+	width:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.font{
+	font-family: fantasy;
+}
+
+
+.title{
+	color:rgb(204, 255, 204,.7);
+	text-shadow: 2px 2px 4px black;
+}
+
+.of{
+	color:rgb(255, 255, 0,.9);
+}
+
+.menu{
+	height: 80%;
+}
+
+.item{
+	text-shadow: 5px 3px black;
+	border-bottom:4px white solid;
+	border-left:4px white solid;
+	width: 50vw;
+	background-color: rgb(122, 179, 161,.5);
+	border-radius: 15%;
+}
+
+div.item:hover {
+  background-color: rgb(255, 255, 0,.8);
+  border:3px black solid;
+  color:black;
+  text-shadow: 2px 3px white;
+}

@@ -1,0 +1,39 @@
+.parent{
+	width:100%;
+	height: 100%;
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
+}
+
+.title{
+	color:rgb(204, 255, 204,.7);
+	text-shadow: 2px 2px 4px black;
+}
+
+.font{
+	font-family:fantasy;
+}
+
+.of{
+	color:rgb(255, 255, 0,.9);
+}
+
+.item{
+	background-color: rgb(122, 179, 161,.5);
+	border-bottom: 4px white solid;
+	border-left:4px white solid;
+	text-shadow: 5px 3px black;
+	border-radius: 15%;
+	width:50%;
+}
+
+div.item:hover{
+	background-color: rgb(255, 255, 0,.8);
+	border:3px black solid;
+	color:black;
+	text-shadow: 2px 3px black;
+}
+
+.menu{
+	height: 80%;
+}

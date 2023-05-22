@@ -1,0 +1,188 @@
+.body{
+	background-image:  url("https://cdn.wallpapersafari.com/31/72/iDuhVj.jpg");
+	background-size : cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width:100%;
+  }
+  
+  .font{
+	  font-family: "Times New Roman", Georgia, Serif;
+  }
+  
+  .logo{
+	width: 12vh;
+	height: 12vh;
+  }
+  
+
+  .contentTitle{
+	  height: 13vh;
+	width: 100%;
+}
+
+.titlePage {
+	text-align: center;
+	color:rgb(0, 51, 102);
+	font-size: 5em;
+	font-weight: bold;
+}
+  
+  .player{
+	  font-size:50px;
+	  color:rgb(0, 51, 102,.8);
+  }
+  
+  .result{
+	  color:#4d4db9;
+	  font-size:50px;
+  }
+  
+  .playAgain{
+	  width: 200px;
+	  height: 50px;
+	  border-radius: 20px;
+	  border:2px solid #006666;
+	  background-color:rgb(255, 255, 255,.7);
+	  color:black;
+	  font-size: 20px;
+  }
+  
+  /* ********* board *********** */
+  
+  .game{
+	  height: 40vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+
+  .rowCells{
+	width: 50vh;
+	height: 13vh;
+
+}
+  
+  .middleRow{
+	  border-top:2px rgb(0, 51, 102) solid;
+	  border-bottom:2px rgb(0, 51, 102) solid;
+  }
+
+  .middleCol{
+	border-right:2px rgb(0, 51, 102) solid;
+	border-left:2px rgb(0, 51, 102) solid;
+}
+
+  .colCells{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	width: 12vh;
+	height: 13vh;
+
+  }
+  
+  .cell{
+	  background-color: rgba(73, 124, 124, 0);
+  display: inline-block;
+  width:100px;
+  height: 99px;
+	border: 2px rgb(0, 51, 102,0) solid;
+  border-radius: 40px 40px 0px 0px; 
+  }
+
+  /* ************ item ************* */
+
+  .itemsOne{
+	padding-right: 40px;
+	border-right: 10px rgb(197, 55, 154) solid;
+  }
+
+  .itemsTwo{
+	margin-left: 30px;
+  }
+
+
+  .comman{
+	border-radius: 40px 40px 0px 0px; 
+	margin-left: 10px;
+ } 
+
+ .small{
+	width:40px;
+	height: 40px;
+ }
+
+
+ .big{
+	width:70px;
+	height: 80px;
+ }
+
+
+ .medium{
+	 width: 60px;
+	 height: 60px;
+ }
+
+  .one{
+	  background-color: rebeccapurple;
+  }
+
+  .two{
+	  background-color: rgb(51, 102, 0);
+  }
+  
+  
+  
+  
+  /* ********** End of page ********* */
+  .socialMediaPhoto{
+	height: 40px;
+	width: 40px;
+  }
+  
+  
+  ul{
+	  list-style-type:none;
+  }
+
+  ul li{
+	  display: inline;
+  }
+  
+  .name{
+	  color:rgb(0, 102, 153);
+	  font-size:2em;
+	 }
+
+	 .message{
+		color:rgb(197, 55, 154);
+		font-size:45px;
+		font-weight: bold;
+		height: 10vh;
+	   }
+	 
+	 .end{
+		 height: 10vh;
+		 width: 100%;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		 text-align: right;
+	 }
+	 
+	 .back{
+		 font-size:3em;
+		 color:rgb(0, 102, 153);
+		 border-bottom:3px rgb(0, 102, 153) solid;
+		 border-left:3px rgb(0, 51, 102) solid;
+		 background-color: rgb(122, 179, 161,.2);
+		 text-align: center;
+		 border-radius: 25px;
+	 }
+  
+  
+  
+  

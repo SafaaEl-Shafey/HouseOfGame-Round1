@@ -1,0 +1,24 @@
+.font{
+	font-family: cursive;
+}
+
+.title{
+	font-size:25em;
+	text-shadow: 5px 7px 10px black;
+	color:rgb(204, 255, 204,.7);
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	background-color: rgb(122, 179, 161,.2);
+	border-radius: 25px;
+}
+
+.parent{
+	background-image: url("../images/bg1.jpg");
+	height: 100%;
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

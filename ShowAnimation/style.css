@@ -1,0 +1,74 @@
+.parent{
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
+}
+
+.BigContainer{
+	height: 80%;
+}
+.of{
+	font-size: 200px;
+	color:rgb(255, 255, 0,.9);
+	text-shadow: 2px 2px 4px black;
+	animation-name: changeColor;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+	from{
+		color:black;
+		text-shadow: 2px 2px 4px white;
+	}
+	to{
+	color:rgb(255, 255, 0,.9);
+	text-shadow: 2px 2px 4px black;
+	}
+	
+}
+
+.house{
+	color:white;
+	position: relative;
+	animation-name: moveFromTop;
+	animation-duration: 3s;
+}
+@keyframes moveFromTop {
+	from{
+		top:-30vh;
+	}
+	to{
+		top:0vh;
+	}
+}
+.game{
+	color:rgb(204, 255, 204,.7);
+	position: relative;
+	animation-name: moveFromRight;
+	animation-duration: 3s;
+}
+@keyframes moveFromRight {
+	from{
+		right:-30vw;
+	}
+	to{
+		right:0vw;
+	}
+}
+.font{
+	font-family: cursive;
+}
+
+.go{
+	text-decoration: none;
+	color:white;
+	border-bottom: 3px white solid;
+	border-left:3px white solid;
+	background-color: rgb(122, 179, 161,.2);
+	border-radius: 25px;
+	text-align: center;
+}
+
+a.go:hover{
+	color:white;
+}

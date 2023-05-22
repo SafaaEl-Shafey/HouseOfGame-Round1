@@ -1,0 +1,61 @@
+.parent{
+	background-image: url("images/bg1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.font{
+	font-family: cursive;
+}
+
+
+.BigContainer{
+	height: 70vh;
+}
+
+
+.loadingWord{
+	color:rgb(255, 255, 0,.9);
+}
+
+.load{
+	background-color:rgb(204, 255, 204,.7);
+	height: 7%;
+	color:rgb(204, 255, 204,.7);
+	border-radius: 40px;
+	animation: loading 5s ;
+	width:50%;
+	/*
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-timing-function: linear;
+	*/
+}
+
+@keyframes loading {
+	from{
+		width:0%;
+	}
+	to{
+		width:50%;	
+	}
+}
+  
+/*
+@keyframes loading{
+	0%{
+		width:0%;
+	}
+	25%{
+		background-color: red;
+	}
+	50%{
+		border-radius: 100%;
+	}
+	100%{
+		width:50%;
+	}
+}
+*/

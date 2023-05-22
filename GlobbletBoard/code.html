@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Globblet Board Game</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<!-- Bootstrap --> 
+	<link href="../bootstrap/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+	
+	</head>
+	<body class="body" onload="init()">
+		<div class="d-flex justify-content-between contentTitle">
+			<img src="../images/logo.png" class="logo">
+			<div class="titlePage">Globblet Board Game</div>
+			<div></div>
+		</div>
+		<div class="d-flex align-items-center flex-row justify-content-around contentTitle">
+			<div >
+				<span class="font player"> Player Left : </span>
+				<span class="result" id="x">0</span>
+			</div>
+			<div ><button onclick="playAgain()" class="playAgain">Play Again</button></div>
+			<div >
+				<span class="font player"> Player Right : </span>
+				<span class="result" id="o">0</span>
+			</div>
+		</div>
+
+
+		<div class="game">
+			
+			<!-- First row --> 
+			<table>
+			<tr class="rowCells"> 
+				<td class="colCells"><button id="0" class="cell" onclick="play('0')"></button></td>
+				<td class="colCells middleCol"><button id='1' class="cell" onclick="play('1')"></button></td>
+				<td class="colCells"><button id='2' class="cell" onclick="play('2')"></button></td>
+			</tr>
+			
+			<!-- Second row -->
+			<tr class="rowCells middleRow">
+				<td class="colCells"><button id='3' class="cell" onclick="play('3')" ></button></td>
+				<td class="colCells middleCol"><button id='4' class="cell" onclick="play('4')"></button></td>
+				<td class="colCells"><button id='5' class="cell" onclick="play('5')"></button></td>
+			</tr>
+			
+			<!-- third row  --> 
+			<tr class="rowCells">
+				<td class="colCells"><button id='6' class="cell" onclick="play('6')"></button></td>
+				<td class="colCells middleCol"><button id='7' class="cell" onclick="play('7')"></button></td>
+				<td class="colCells"><button id='8' class="cell" onclick="play('8')"></button></td>
+			</tr>
+		</table>
+			
+	</div>
+	
+	<div class="d-flex justify-content-center contentTitle">
+	<div class="d-flex justify-content-start itemsOne">
+		<div class="small one comman" onclick="playItem('x','0','s-0-x-r')" id="s-0-x-r"></div>
+		<div class="small one comman" onclick="playItem('x','0','s-0-x-l')" id="s-0-x-l"></div>
+		<div class="medium one comman" onclick="playItem('x','1','m-1-x-r')" id="m-1-x-r"></div>
+		<div class="medium one comman" onclick="playItem('x','1','m-1-x-l')" id="m-1-x-l"></div>
+		<div class="big one comman" onclick="playItem('x','2','b-2-x-r')" id="b-2-x-r"></div>
+		<div class="big one comman" onclick="playItem('x','2','b-2-x-l')" id="b-2-x-l"></div>
+		
+	</div>
+
+	<div class="d-flex justify-content-end itemsTwo ">
+		<div class="big two comman" onclick="playItem('o','2','b-2-o-r')" id="b-2-o-r"></div>
+		<div class="big two comman" onclick="playItem('o','2','b-2-o-l')" id="b-2-o-l"></div>
+		<div class="medium two comman" onclick="playItem('o','1','m-1-o-r')" id="m-1-o-r"></div>
+		<div class="medium two comman" onclick="playItem('o','1','m-1-o-l')" id="m-1-o-l"></div>
+		<div class="small two comman" onclick="playItem('o','0','s-0-o-r')" id="s-0-o-r"></div>
+		<div class="small two comman" onclick="playItem('o','0','s-0-o-l')" id="s-0-o-l"></div>
+	</div>
+
+	
+
+</div>
+<div class="d-flex justify-content-center message font" id="message">
+	......
+</div> 
+	<div class="d-flex justify-content-end end">
+		<span class="name">Safaa El-Shafe'y (^_^) </span>
+		<button onclick="back();" class="back">Back</button>
+	</div>
+	
+	<!-- Bootstrap js -->
+	<script src="../bootstrap/js-bootstrap/bootstrap.min.js"></script>
+	<script src="../bootstrap/js-bootstrap/bootstrap.bundle.min.js"></script>
+
+	<script src="js.js" > 
+	</script> 
+	</body>
+</html>

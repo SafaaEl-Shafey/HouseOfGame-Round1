@@ -1,0 +1,113 @@
+.body{
+	background-image:  url("bg10.jpg");
+	background-size : cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width:100%;
+  }
+  
+  .font{
+	  font-family: cursive;
+  }
+  
+  .logo{
+	  width: 10vh;
+	  height: 10vh;
+  }
+  
+.containerLine{
+	height: 10vh;
+width: 100%;
+}  
+  .containerTitle{
+height: 13vh;
+width: 100%;
+  }
+
+  .titlePage{
+	  color:white;
+	  font-size:5em;
+	  font-weight: bold;
+  }
+  
+  .player{
+	  font-size:3em;
+	  color:rgb(102, 255, 255,.7);
+  }
+  
+  .result{
+	  color:white;
+	  font-size:3em;
+  }
+  
+  .playAgain{
+	  border-radius: 20px;
+	  border:2px solid #006666;
+	  background-color:rgb(255, 255, 255,.7);
+	  color:black;
+	  font-size: 3em;
+  }
+  
+  /* ********* Calc *********** */
+  
+  .game{
+	 display:flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+	width: 100%;
+	height: 47vh;
+  }
+
+  .rowCells{	  
+	  display: flex;
+	  justify-content: space-between;
+	width: 35%;
+	height: 15vh;
+}
+  
+  .cell{
+	  background-color: rgba(73, 124, 124, 0.6);
+   color:white;
+   margin: .5%;
+   font-size:4em;
+   height:90%;
+   width:35%;
+   border: 2px solid #006666;
+   border-radius:15px ;
+   text-align: center;
+  }
+  
+  
+  
+  
+  /* ********** End of page ********* */
+  .socialMediaPhoto{
+	height: 4vh;
+	width: 4vh;
+  }
+  
+  
+  ul{
+	  list-style-type:none;
+  }
+  ul li{
+	  display: inline;
+  }
+  
+  .name{
+	  color:rgb(255, 255, 204,.7);
+	  font-size:2em;
+	 }
+	 
+	 .back{
+		 font-size:3em;
+		 color:white;
+		 border-bottom:3px white solid;
+		 border-left:3px white solid;
+		 padding:.5%;
+		 background-color: rgb(122, 179, 161,.2);
+		 text-align: center;
+		 border-radius: 25px;
+	 }
+  

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Water Color Puzzle Game
+		</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+<body class="body" onload="SetBoard();">
+	<div class="container">
+		<img src="../images/logo.png" class="logo">
+		<div class="titlePage">Water Color Puzzle Game </div>
+	</div>
+	
+	<div class="container">
+		<span class="message" id="message">.........</span>
+		<button onclick="playAgain()" class="playAgain">Play Again</button>
+	</div>
+
+
+
+	<div class="game">
+
+		<!-- First row --> 
+		<div class="row">
+			<div id="0" onclick="play('0')" class="pipe"> 
+				<div id="p_0_0" class="cell"></div>
+				<div id="p_0_1" class="cell"></div>
+				<div id="p_0_2" class="cell"></div>
+				<div id="p_0_3" class="cell lastCell"></div>
+			</div>
+			<div id='1' onclick="play('1')" class="pipe"> 
+				<div id="p_1_0" class="cell"></div>
+				<div id="p_1_1" class="cell"></div>
+				<div id="p_1_2" class="cell"></div>
+				<div id="p_1_3" class="cell lastCell"></div>
+			</div>
+			<div id='2' onclick="play('2')" class="pipe"> 
+				<div id="p_2_0" class="cell"></div>
+				<div id="p_2_1" class="cell"></div>
+				<div id="p_2_2" class="cell"></div>
+				<div id="p_2_3" class="cell lastCell"></div>
+			</div>
+			<div id="3" onclick="play('3')" class="pipe"> 
+				<div id="p_3_0" class="cell"></div>
+				<div id="p_3_1" class="cell"></div>
+				<div id="p_3_2" class="cell"></div>
+				<div id="p_3_3" class="cell lastCell"></div>
+			</div>
+			<div id='4' onclick="play('4')" class="pipe"> 
+				<div id="p_4_0" class="cell"></div>
+				<div id="p_4_1" class="cell"></div>
+				<div id="p_4_2" class="cell"></div>
+				<div id="p_4_3" class="cell lastCell"></div>
+			</div>
+			<div id='5' onclick="play('5')" class="pipe"> 
+				<div id="p_5_0" class="cell"></div>
+				<div id="p_5_1" class="cell"></div>
+				<div id="p_5_2" class="cell"></div>
+				<div id="p_5_3" class="cell lastCell"></div>
+			</div>
+		
+			<div id='6' onclick="play('6')" class="pipe"> 
+				<div id="p_6_0" class="cell"></div>
+				<div id="p_6_1" class="cell"></div>
+				<div id="p_6_2" class="cell"></div>
+				<div id="p_6_3" class="cell lastCell"></div>
+			</div>
+			<div id='7' onclick="play('7')" class="pipe"> 
+				<div id="p_7_0" class="cell"></div>
+				<div id="p_7_1" class="cell"></div>
+				<div id="p_7_2" class="cell"></div>
+				<div id="p_7_3" class="cell lastCell"></div>
+			</div>
+			<div id="8" onclick="play('8')" class="pipe"> 
+				<div id="p_8_0" class="cell"></div>
+				<div id="p_8_1" class="cell"></div>
+				<div id="p_8_2" class="cell"></div>
+				<div id="p_8_3" class="cell lastCell"></div>
+			</div>
+			<div id='9' onclick="play('9')" class="pipe"> 
+				<div id="p_9_0" class="cell"></div>
+				<div id="p_9_1" class="cell"></div>
+				<div id="p_9_2" class="cell"></div>
+				<div id="p_9_3" class="cell lastCell"></div>
+			</div>
+			<div id='10' onclick="play('10')" class="pipe"> 
+				<div id="p_10_0" class="cell"></div>
+				<div id="p_10_1" class="cell"></div>
+				<div id="p_10_2" class="cell"></div>
+				<div id="p_10_3" class="cell lastCell"></div>
+			</div>
+		</div>
+
+
+	</div>
+<div class="end">
+	
+	<span class="name">Safaa El-Shafe'y (^_^) </span>
+	<button onclick="back();" class="back">Back</button>
+	</div>
+<script src="js.js" > 
+</script> 
+</body>
+</html>

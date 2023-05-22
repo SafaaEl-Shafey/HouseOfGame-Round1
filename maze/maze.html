@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Maze Game</title>
+    <link rel="stylesheet" type="text/css" href="mazing.css">
+</head>
+
+<body onload="onLoad();">
+    <section class=" parent">
+        <div class="title font"> Maze Game</div>
+        <div id="result">..........</div>
+        <div id="maze_container">
+            <div id="maze">
+                <div>
+                    <div id="00" class="wall"></div>
+                    <div id="01" class="crocodile"></div>
+                    <div id="02" class="wall"></div>
+                    <div id="03" class="wall"></div>
+                    <div id="04" class="wall"></div>
+                    <div id="05" class="wall"></div>
+                    <div id="06" class="wall"></div>
+                    <div id="07" class="wall"></div>
+                    <div id="08" class="wall"></div>
+                    <div id="09" class="wall"></div>
+                    <div id="010" class="wall"></div>
+                    <div id="011" class="wall"></div>
+                    <div id="012" class="wall"></div>
+                    <div id="013" class="wall"></div>
+                    <div id="014" class="wall"></div>
+                    <div id="015" class="wall"></div>
+                    <div id="016" class="wall"></div>
+                    <div id="017" class="wall"></div>
+                    <div id="018" class="wall"></div>
+                    <div id="019" class="wall"></div>
+                    <div id="020" class="wall"></div>
+                </div>
+                <div>
+                    <div id="10" class="wall"></div>
+                    <div id="11" class=""></div>
+                    <div id="12" class="wall"></div>
+                    <div id="13" class=""></div>
+                    <div id="14" class="wall"></div>
+                    <div id="15" class=""></div>
+                    <div id="16" class="wall"></div>
+                    <div id="17" class=""></div>
+                    <div id="18" class="wall"></div>
+                    <div id="19" class=""></div>
+                    <div id="110" class="wall"></div>
+                    <div id="111" class=""></div>
+                    <div id="112" class="wall"></div>
+                    <div id="113" class=""></div>
+                    <div id="114" class="wall"></div>
+                    <div id="115" class=""></div>
+                    <div id="116" class="wall"></div>
+                    <div id="117" class=""></div>
+                    <div id="118" class="wall"></div>
+                    <div id="119" class=""></div>
+                    <div id="120" class="wall"></div>
+                </div>
+                <div>
+                    <div id="20" class="wall"></div>
+                    <div id="21" class=""></div>
+                    <div id="22" class="wall"></div>
+                    <div id="23" class=""></div>
+                    <div id="24" class="wall"></div>
+                    <div id="25" class=""></div>
+                    <div id="26" class="wall"></div>
+                    <div id="27" class=""></div>
+                    <div id="28" class="wall"></div>
+                    <div id="29" class=""></div>
+                    <div id="210" class="wall"></div>
+                    <div id="211" class=""></div>
+                    <div id="212" class="wall"></div>
+                    <div id="213" class=""></div>
+                    <div id="214" class="wall"></div>
+                    <div id="215" class=""></div>
+                    <div id="216" class="wall"></div>
+                    <div id="217" class=""></div>
+                    <div id="218" class="wall"></div>
+                    <div id="219" class=""></div>
+                    <div id="220" class="wall"></div>
+                </div>
+                <div>
+                    <div id="30" class="wall"></div>
+                    <div id="31" class=""></div>
+                    <div id="32" class=""></div>
+                    <div id="33" class=""></div>
+                    <div id="34" class="wall"></div>
+                    <div id="35" class=""></div>
+                    <div id="36" class="wall"></div>
+                    <div id="37" class=""></div>
+                    <div id="38" class="wall"></div>
+                    <div id="39" class=""></div>
+                    <div id="310" class="wall"></div>
+                    <div id="311" class=""></div>
+                    <div id="312" class=""></div>
+                    <div id="313" class=""></div>
+                    <div id="314" class="wall"></div>
+                    <div id="315" class=""></div>
+                    <div id="316" class=""></div>
+                    <div id="317" class=""></div>
+                    <div id="318" class=""></div>
+                    <div id="319" class=""></div>
+                    <div id="320" class="wall"></div>
+                </div>
+                <div>
+                    <div id="40" class="wall"></div>
+                    <div id="41" class=""></div>
+                    <div id="42" class="wall"></div>
+                    <div id="43" class="wall"></div>
+                    <div id="44" class="wall"></div>
+                    <div id="45" class=""></div>
+                    <div id="46" class="wall"></div>
+                    <div id="47" class=""></div>
+                    <div id="48" class="wall"></div>
+                    <div id="49" class=""></div>
+                    <div id="410" class="wall"></div>
+                    <div id="411" class=""></div>
+                    <div id="412" class="wall"></div>
+                    <div id="413" class=""></div>
+                    <div id="414" class="wall"></div>
+                    <div id="415" class="wall"></div>
+                    <div id="416" class="wall"></div>
+                    <div id="417" class="wall"></div>
+                    <div id="418" class="wall"></div>
+                    <div id="419" class=""></div>
+                    <div id="420" class="wall"></div>
+                </div>
+                <div>
+                    <div id="50" class="wall"></div>
+                    <div id="51" class=""></div>
+                    <div id="52" class=""></div>
+                    <div id="53" class=""></div>
+                    <div id="54" class=""></div>
+                    <div id="55" class=""></div>
+                    <div id="56" class="wall"></div>
+                    <div id="57" class=""></div>
+                    <div id="58" class=""></div>
+                    <div id="59" class=""></div>
+                    <div id="510" class="wall"></div>
+                    <div id="511" class=""></div>
+                    <div id="512" class="wall"></div>
+                    <div id="513" class=""></div>
+                    <div id="514" class="wall"></div>
+                    <div id="515" class=""></div>
+                    <div id="516" class=""></div>
+                    <div id="517" class=""></div>
+                    <div id="518" class=""></div>
+                    <div id="519" class=""></div>
+                    <div id="520" class="wall"></div>
+                </div>
+                <div>
+                    <div id="60" class="wall"></div>
+                    <div id="61" class="wall"></div>
+                    <div id="62" class="wall"></div>
+                    <div id="63" class="wall"></div>
+                    <div id="64" class="wall"></div>
+                    <div id="65" class=""></div>
+                    <div id="66" class="wall"></div>
+                    <div id="67" class="wall"></div>
+                    <div id="68" class="wall"></div>
+                    <div id="69" class=""></div>
+                    <div id="610" class="wall"></div>
+                    <div id="611" class="wall"></div>
+                    <div id="612" class="wall"></div>
+                    <div id="613" class=""></div>
+                    <div id="614" class="wall"></div>
+                    <div id="615" class="wall"></div>
+                    <div id="616" class="wall"></div>
+                    <div id="617" class="wall"></div>
+                    <div id="618" class="wall"></div>
+                    <div id="619" class=""></div>
+                    <div id="620" class="wall"></div>
+                </div>
+                <div>
+                    <div id="70" class="wall"></div>
+                    <div id="71" class=""></div>
+                    <div id="72" class=""></div>
+                    <div id="73" class=""></div>
+                    <div id="74" class=""></div>
+                    <div id="75" class=""></div>
+                    <div id="76" class=""></div>
+                    <div id="77" class=""></div>
+                    <div id="78" class=""></div>
+                    <div id="79" class=""></div>
+                    <div id="710" class="wall"></div>
+                    <div id="711" class=""></div>
+                    <div id="712" class=""></div>
+                    <div id="713" class=""></div>
+                    <div id="714" class="wall"></div>
+                    <div id="715" class=""></div>
+                    <div id="716" class=""></div>
+                    <div id="717" class=""></div>
+                    <div id="718" class="wall"></div>
+                    <div id="719" class=""></div>
+                    <div id="720" class="wall"></div>
+                </div>
+                <div>
+                    <div id="80" class="wall"></div>
+                    <div id="81" class="wall"></div>
+                    <div id="82" class="wall"></div>
+                    <div id="83" class="wall"></div>
+                    <div id="84" class="wall"></div>
+                    <div id="85" class=""></div>
+                    <div id="86" class="wall"></div>
+                    <div id="87" class=""></div>
+                    <div id="88" class="wall"></div>
+                    <div id="89" class=""></div>
+                    <div id="810" class="wall"></div>
+                    <div id="811" class=""></div>
+                    <div id="812" class="wall"></div>
+                    <div id="813" class="wall"></div>
+                    <div id="814" class="wall"></div>
+                    <div id="815" class="wall"></div>
+                    <div id="816" class="wall"></div>
+                    <div id="817" class=""></div>
+                    <div id="818" class="wall"></div>
+                    <div id="819" class=""></div>
+                    <div id="820" class="wall"></div>
+                </div>
+                <div>
+                    <div id="90" class="wall"></div>
+                    <div id="91" class=""></div>
+                    <div id="92" class=""></div>
+                    <div id="93" class=""></div>
+                    <div id="94" class=""></div>
+                    <div id="95" class=""></div>
+                    <div id="96" class="wall"></div>
+                    <div id="97" class=""></div>
+                    <div id="98" class="wall"></div>
+                    <div id="99" class=""></div>
+                    <div id="910" class=""></div>
+                    <div id="911" class=""></div>
+                    <div id="912" class=""></div>
+                    <div id="913" class=""></div>
+                    <div id="914" class=""></div>
+                    <div id="915" class=""></div>
+                    <div id="916" class=""></div>
+                    <div id="917" class=""></div>
+                    <div id="918" class=""></div>
+                    <div id="919" class=""></div>
+                    <div id="920" class="wall"></div>
+                </div>
+                <div>
+                    <div id="100" class="wall"></div>
+                    <div id="101" class="wall"></div>
+                    <div id="102" class="wall"></div>
+                    <div id="103" class="wall"></div>
+                    <div id="104" class="wall"></div>
+                    <div id="105" class="wall"></div>
+                    <div id="106" class="wall"></div>
+                    <div id="107" class="wall"></div>
+                    <div id="108" class="wall"></div>
+                    <div id="109" class="wall"></div>
+                    <div id="1010" class="wall"></div>
+                    <div id="1011" class=""></div>
+                    <div id="1012" class="wall"></div>
+                    <div id="1013" class="wall"></div>
+                    <div id="1014" class="wall"></div>
+                    <div id="1015" class="wall"></div>
+                    <div id="1016" class="wall"></div>
+                    <div id="1017" class="wall"></div>
+                    <div id="1018" class="wall"></div>
+                    <div id="1019" class="wall"></div>
+                    <div id="1020" class="wall"></div>
+                </div>
+                <div>
+                    <div id="110" class="wall"></div>
+                    <div id="111" class=""></div>
+                    <div id="112" class=""></div>
+                    <div id="113" class=""></div>
+                    <div id="114" class="wall"></div>
+                    <div id="115" class=""></div>
+                    <div id="116" class="wall"></div>
+                    <div id="117" class=""></div>
+                    <div id="118" class=""></div>
+                    <div id="119" class=""></div>
+                    <div id="1110" class=""></div>
+                    <div id="1111" class=""></div>
+                    <div id="1112" class=""></div>
+                    <div id="1113" class=""></div>
+                    <div id="1114" class=""></div>
+                    <div id="1115" class=""></div>
+                    <div id="1116" class="wall"></div>
+                    <div id="1117" class=""></div>
+                    <div id="1118" class="wall"></div>
+                    <div id="1119" class=""></div>
+                    <div id="1120" class="wall"></div>
+                </div>
+                <div>
+                    <div id="120" class="wall"></div>
+                    <div id="121" class="wall"></div>
+                    <div id="122" class="wall"></div>
+                    <div id="123" class=""></div>
+                    <div id="124" class="wall"></div>
+                    <div id="125" class=""></div>
+                    <div id="126" class="wall"></div>
+                    <div id="127" class="wall"></div>
+                    <div id="128" class="wall"></div>
+                    <div id="129" class=""></div>
+                    <div id="1210" class="wall"></div>
+                    <div id="1211" class=""></div>
+                    <div id="1212" class="wall"></div>
+                    <div id="1213" class="wall"></div>
+                    <div id="1214" class="wall"></div>
+                    <div id="1215" class=""></div>
+                    <div id="1216" class="wall"></div>
+                    <div id="1217" class=""></div>
+                    <div id="1218" class="wall"></div>
+                    <div id="1219" class=""></div>
+                    <div id="1220" class="wall"></div>
+                </div>
+                <div>
+                    <div id="130" class="wall"></div>
+                    <div id="131" class=""></div>
+                    <div id="132" class=""></div>
+                    <div id="133" class=""></div>
+                    <div id="134" class=""></div>
+                    <div id="135" class=""></div>
+                    <div id="136" class=""></div>
+                    <div id="137" class=""></div>
+                    <div id="138" class=""></div>
+                    <div id="139" class=""></div>
+                    <div id="1310" class="wall"></div>
+                    <div id="1311" class=""></div>
+                    <div id="1312" class=""></div>
+                    <div id="1313" class=""></div>
+                    <div id="1314" class="wall"></div>
+                    <div id="1315" class=""></div>
+                    <div id="1316" class="wall"></div>
+                    <div id="1317" class=""></div>
+                    <div id="1318" class=""></div>
+                    <div id="1319" class=""></div>
+                    <div id="1320" class="wall"></div>
+                </div>
+                <div>
+                    <div id="140" class="wall"></div>
+                    <div id="141" class="wall"></div>
+                    <div id="142" class="wall"></div>
+                    <div id="143" class="wall"></div>
+                    <div id="144" class="wall"></div>
+                    <div id="145" class="wall"></div>
+                    <div id="146" class="wall"></div>
+                    <div id="147" class="wall"></div>
+                    <div id="148" class="wall"></div>
+                    <div id="149" class=""></div>
+                    <div id="1410" class="wall"></div>
+                    <div id="1411" class="wall"></div>
+                    <div id="1412" class="wall"></div>
+                    <div id="1413" class="wall"></div>
+                    <div id="1414" class="wall"></div>
+                    <div id="1415" class=""></div>
+                    <div id="1416" class="wall"></div>
+                    <div id="1417" class="wall"></div>
+                    <div id="1418" class="wall"></div>
+                    <div id="1419" class=""></div>
+                    <div id="1420" class="wall"></div>
+                </div>
+                <div>
+                    <div id="150" class="wall"></div>
+                    <div id="151" class=""></div>
+                    <div id="152" class="wall"></div>
+                    <div id="153" class=""></div>
+                    <div id="154" class="wall"></div>
+                    <div id="155" class=""></div>
+                    <div id="156" class="wall"></div>
+                    <div id="157" class=""></div>
+                    <div id="158" class=""></div>
+                    <div id="159" class=""></div>
+                    <div id="1510" class="wall"></div>
+                    <div id="1511" class=""></div>
+                    <div id="1512" class=""></div>
+                    <div id="1513" class=""></div>
+                    <div id="1514" class="wall"></div>
+                    <div id="1515" class=""></div>
+                    <div id="1516" class="wall"></div>
+                    <div id="1517" class=""></div>
+                    <div id="1518" class=""></div>
+                    <div id="1519" class=""></div>
+                    <div id="1520" class="wall"></div>
+                </div>
+                <div>
+                    <div id="160" class="wall"></div>
+                    <div id="161" class=""></div>
+                    <div id="162" class="wall"></div>
+                    <div id="163" class=""></div>
+                    <div id="164" class="wall"></div>
+                    <div id="165" class=""></div>
+                    <div id="166" class="wall"></div>
+                    <div id="167" class=""></div>
+                    <div id="168" class="wall"></div>
+                    <div id="169" class=""></div>
+                    <div id="1610" class="wall"></div>
+                    <div id="1611" class=""></div>
+                    <div id="1612" class="wall"></div>
+                    <div id="1613" class=""></div>
+                    <div id="1614" class="wall"></div>
+                    <div id="1615" class=""></div>
+                    <div id="1616" class="wall"></div>
+                    <div id="1617" class=""></div>
+                    <div id="1618" class="wall"></div>
+                    <div id="1619" class=""></div>
+                    <div id="1620" class="wall"></div>
+                </div>
+                <div>
+                    <div id="170" class="wall"></div>
+                    <div id="171" class=""></div>
+                    <div id="172" class=""></div>
+                    <div id="173" class=""></div>
+                    <div id="174" class=""></div>
+                    <div id="175" class=""></div>
+                    <div id="176" class=""></div>
+                    <div id="177" class=""></div>
+                    <div id="178" class="wall"></div>
+                    <div id="179" class=""></div>
+                    <div id="1710" class="wall"></div>
+                    <div id="1711" class=""></div>
+                    <div id="1712" class="wall"></div>
+                    <div id="1713" class=""></div>
+                    <div id="1714" class=""></div>
+                    <div id="1715" class=""></div>
+                    <div id="1716" class="wall"></div>
+                    <div id="1717" class=""></div>
+                    <div id="1718" class="wall"></div>
+                    <div id="1719" class=""></div>
+                    <div id="1720" class="wall"></div>
+                </div>
+                <div>
+                    <div id="180" class="wall"></div>
+                    <div id="181" class=""></div>
+                    <div id="182" class="wall"></div>
+                    <div id="183" class="wall"></div>
+                    <div id="184" class="wall"></div>
+                    <div id="185" class="wall"></div>
+                    <div id="186" class="wall"></div>
+                    <div id="187" class=""></div>
+                    <div id="188" class="wall"></div>
+                    <div id="189" class=""></div>
+                    <div id="1810" class="wall"></div>
+                    <div id="1811" class="wall"></div>
+                    <div id="1812" class="wall"></div>
+                    <div id="1813" class=""></div>
+                    <div id="1814" class="wall"></div>
+                    <div id="1815" class="wall"></div>
+                    <div id="1816" class="wall"></div>
+                    <div id="1817" class=""></div>
+                    <div id="1818" class="wall"></div>
+                    <div id="1819" class=""></div>
+                    <div id="1820" class="wall"></div>
+                </div>
+                <div>
+                    <div id="190" class="wall"></div>
+                    <div id="191" class=""></div>
+                    <div id="192" class=""></div>
+                    <div id="193" class=""></div>
+                    <div id="194" class=""></div>
+                    <div id="195" class=""></div>
+                    <div id="196" class="wall"></div>
+                    <div id="197" class=""></div>
+                    <div id="198" class="wall"></div>
+                    <div id="199" class=""></div>
+                    <div id="1910" class="wall"></div>
+                    <div id="1911" class=""></div>
+                    <div id="1912" class=""></div>
+                    <div id="1913" class=""></div>
+                    <div id="1914" class=""></div>
+                    <div id="1915" class=""></div>
+                    <div id="1916" class=""></div>
+                    <div id="1917" class=""></div>
+                    <div id="1918" class="wall"></div>
+                    <div id="1919" class=""></div>
+                    <div id="1920" class="wall"></div>
+                </div>
+                <div>
+                    <div id="200" class="wall"></div>
+                    <div id="201" class="wall"></div>
+                    <div id="202" class="wall"></div>
+                    <div id="203" class="wall"></div>
+                    <div id="204" class="wall"></div>
+                    <div id="205" class="wall"></div>
+                    <div id="206" class="wall"></div>
+                    <div id="207" class="wall"></div>
+                    <div id="208" class="wall"></div>
+                    <div id="209" class="wall"></div>
+                    <div id="2010" class="wall"></div>
+                    <div id="2011" class="wall"></div>
+                    <div id="2012" class="wall"></div>
+                    <div id="2013" class="wall"></div>
+                    <div id="2014" class="wall"></div>
+                    <div id="2015" class="wall"></div>
+                    <div id="2016" class="wall"></div>
+                    <div id="2017" class="wall"></div>
+                    <div id="2018" class="wall"></div>
+                    <div id="2019" class="flower"></div>
+                    <div id="2020" class="wall"></div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="socailMediaGroup">
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCC_bGf8JdzCef1ubGK8yYyA" target="_blank"><img
+                            class="socialMediaPhoto" src="../images/Ytube.png" alt="youtube" /></a></li>
+                <li><a href="https://t.me/safaaVideos" target="_blank"><img class="socialMediaPhoto"
+                            src="../images/telegram.png" alt="telegram" /></a></li>
+                <li><a href="https://www.facebook.com/pages/category/Education-Website/Safaa-El-shafey-113237927115850/"
+                        target="_blank"><img class="socialMediaPhoto" src="../images/facebook2.png" alt="facebook" /></a>
+                </li>
+                <li><a href="safaa.videos@gmail.com" target="_blank"><img class="socialMediaPhoto" src="../images/gmail.png"
+                            alt="Gmail" /></a></li>
+                <li><a href="https://www.linkedin.com/company/safaa-el-shafe-y?lipi=urn%3Ali%3Apage%3Amessaging_thread%3BhrQyPL0EREOrB2dfqyu%2FhQ%3D%3D"
+                        target="_blank"><img class="socialMediaPhoto" src="../images/linkedin.png" alt="Linkedin" /></a>
+                </li>
+            </ul>
+        </div>
+        <div class="end">
+            <span class="name">Safaa El-Shafe'y (^_^) </span>
+            <button onclick="back();" class="back">Back</button>
+        </div>
+
+    </section>
+    <script src="maze.js"></script>
+</body>
+
+</html>

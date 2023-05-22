@@ -1,0 +1,38 @@
+.font{
+	font-family: fantasy;
+}
+
+.parent{
+	background-image: url("../images/bg0.jpg");
+	background-size: cover;
+}
+
+.title{
+	color:rgb(204, 255, 204,.7);
+	text-shadow: 2px 2px 4px black;
+}
+
+.any{
+	font-size: 1.5em;
+	color:rgb(255, 255, 0,.9);
+}
+
+.icon{
+	width: 100%;
+	height: 150px;
+}
+
+.element{
+	width:400px;
+	margin-bottom: 10px;
+}
+
+div.element:hover {
+ transform: scale(1.1);
+}
+
+
+.back{
+	background-color: rgb(122, 179, 161,.2);
+	border-radius: 25px;
+}

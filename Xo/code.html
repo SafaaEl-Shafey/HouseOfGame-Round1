@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Xo Game </title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<!-- Bootstrap --> 
+	<link href="../bootstrap/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+	
+	</head>
+	<body class="body">
+		<div class="d-flex justify-content-between containerTitle align-items-center">
+			<img src="../images/logo.png" class="logo">
+			<div class="titlePage font">Tic-Tac-Toe </div>
+			<div></div>
+		</div>
+
+		<div class="d-flex justify-content-around containerLine align-items-center">
+			<div >
+				<span class="font player"> Player X : </span>
+				<span class="result" id="X">0</span>
+			</div>
+			<div ><button onclick="playAgain()" class="playAgain">Play Again</button></div>
+			<div >
+				<span class="font player"> Player O : </span>
+				<span class="result" id="O">0</span>
+			</div>
+		</div>
+
+
+		<div class="game">
+			
+			<!-- First row --> 
+			<div class="rowCells"> 
+				<button id="0" class="cell" onclick="play('0',0,0)">&nbsp;</button>
+				<button id='1' class="cell" onclick="play('1', 0,1)">&nbsp;</button>
+				<button id='2' class="cell" onclick="play('2' , 0,2)">&nbsp;</button>
+			</div>
+			
+			<!-- Second row -->
+			<div class="rowCells">
+					<button id='3' class="cell" onclick="play('3' , 1,0)" >&nbsp;</button>
+					<button id='4' class="cell" onclick="play('4' , 1,1)">&nbsp;</button>
+					<button id='5' class="cell" onclick="play('5' , 1,2)">&nbsp;</button>
+			</div>
+			
+			<!-- third row  --> 
+			<div class="rowCells">
+				<button id='6' class="cell" onclick="play('6' ,2,0)">&nbsp;</button>
+				<button id='7' class="cell" onclick="play('7' ,2,1)">&nbsp;</button>
+				<button id='8' class="cell" onclick="play('8' , 2,2)">&nbsp;</button>
+			</div>
+			
+			
+			</div>
+
+
+	<div class="d-flex justify-content-center containerLine align-items-center">
+		<ul>
+			<li><a href="https://www.youtube.com/channel/UCC_bGf8JdzCef1ubGK8yYyA" target="_blank"><img class="socialMediaPhoto" src="../images/Ytube.png" alt="youtube" /></a></li>
+			<li><a href="https://t.me/safaaVideos" target="_blank"><img class="socialMediaPhoto" src="../images/telegram.png" alt="telegram" /></a></li>
+			<li><a href="https://www.facebook.com/pages/category/Education-Website/Safaa-El-shafey-113237927115850/" target="_blank"><img class="socialMediaPhoto" src="../images/facebook2.png" alt="facebook"/></a></li>
+			<li><a href="safaa.videos@gmail.com" target="_blank"><img class="socialMediaPhoto" src="../images/gmail.png" alt="Gmail"/></a></li>
+			<li><a href="https://www.linkedin.com/company/safaa-el-shafe-y?lipi=urn%3Ali%3Apage%3Amessaging_thread%3BhrQyPL0EREOrB2dfqyu%2FhQ%3D%3D" target="_blank"><img class="socialMediaPhoto" src="../images/linkedin.png" alt="Linkedin"/></a></li>
+		</ul>
+	</div>
+
+	<div class="name d-flex justify-content-center containerLine align-items-center" id="message">........</div>
+	
+
+		<div class="d-flex justify-content-end containerLine align-items-center">
+			<span class="name">Safaa El-Shafe'y ( ^__^ ) </span>
+			<button onclick="back();" class="back">Back</button>
+		</div>
+
+	
+
+	
+	
+	<!-- Bootstrap js -->
+	<script src="../bootstrap/js-bootstrap/bootstrap.min.js"></script>
+	<script src="../bootstrap/js-bootstrap/bootstrap.bundle.min.js"></script>
+
+	<script src="js.js" > 
+	</script> 
+	</body>
+</html>

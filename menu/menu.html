@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Menu</title>
+    <link href="menuStyle.css" rel="stylesheet" />
+    <link
+      href="../bootstrap/css-bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+	<div class="parent">
+		<div class="text-center display-1 title font p-4">
+			House <span class="of">Of</span>  Games
+		</div>
+		<div class="text-center text-white display-3 font menu d-flex justify-content-evenly flex-column align-items-center">
+			<div onclick="chooseGame();" class="item">Start</div>
+			<div onclick="about();" class="item">About</div>
+			<div onclick="rateUs();" class="item">Rate Us</div>
+			<div onclick="exit();" class="item">Exit</div>
+		</div>
+	</div>
+   
+    <script src="../bootstrap/js-bootstrap/bootstrap.min.js"></script>
+    <script src="menujs.js"></script>
+  </body>
+</html>

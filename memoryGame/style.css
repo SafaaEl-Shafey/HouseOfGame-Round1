@@ -1,0 +1,100 @@
+ .body{
+  background-image:  url("bg2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.font{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.logo{
+	width: 10vh;
+	height: 10vh;
+}
+
+.container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 13vh;
+width: 100%;
+}
+
+.titlePage{
+	color:rgb(204, 204, 255,.8);
+	font-size:5em;
+	font-weight: bold;
+}
+
+.player{
+	font-size:3em;
+	color:#99ccff;
+}
+
+.result{
+	color:white;
+	font-size:3em;
+}
+
+.playAgain{
+	padding: 1%;
+	border-radius: 20px;
+	border:2px solid;
+	opacity: .7;
+	font-size:3em;
+}
+
+
+
+/* ********* Calc *********** */
+
+
+
+.MyTable{
+	display: flex;
+justify-content: center;
+align-items: center;
+height: 55vh;
+width: 100%;
+}
+
+.MyTable button{
+ text-align: center;
+ color:black;
+ font-size:20px;
+ height:10vh;
+ width:10vh;
+ margin:5px 5px 0px 0px;
+ border: 2px solid #0066cc;
+ border-radius:15px ;
+}
+
+
+/* ********** End of page ********* */
+.name{
+ color:rgb(255, 255, 204,.7);
+ font-size:3em;
+}
+
+.end{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	height: 15vh;
+	text-align: right;
+}
+
+.back{
+	font-size:4em;
+	color:white;
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	padding:.5%;
+	background-color: rgb(122, 179, 161,.2);
+	text-align: center;
+	border-radius: 25px;
+}

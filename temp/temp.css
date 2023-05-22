@@ -1,0 +1,75 @@
+.parent{
+	background-image: url("../images/bg1.jpg");
+	background-size: cover;
+}
+
+.BigContainer{
+	height: 80%;
+}
+
+.font{
+	font-family: cursive;
+}
+
+.of{
+	font-size: 200px;
+	color:rgb(255, 255, 0,.9);
+	text-shadow: 2px 2px 4px black;
+	animation: changeColorOf 1s infinite ;
+}
+
+.word{
+	text-shadow: 2px 2px 4px black;
+}
+
+.house{
+	position: relative;
+	color:white;
+	animation: moveFromTop 3s ;
+}
+
+.game{
+	position: relative;
+	color:rgb(204, 255, 204,.7);
+	animation: moveFromRight 3s ;
+}
+
+.go{
+	color:white;
+	border-bottom:3px white solid;
+	border-left:3px white solid;
+	background-color: rgb(122, 179, 161,.2);
+	text-align: center;
+	border-radius: 25px;
+}
+
+@keyframes changeColorOf {
+	0%{
+		color:black;
+		text-shadow: 2px 2px 4px white;
+	}
+	100%{
+		color:rgb(255, 255, 0,.9);	
+	}
+}
+
+
+
+@keyframes moveFromTop {
+	from{
+		top:-30vh;
+	}
+	to{
+		top:0vh;	
+	}
+}
+
+
+@keyframes moveFromRight {
+	from{
+		right:-30vw;
+	}
+	to{
+		right:0vw;	
+	}
+}

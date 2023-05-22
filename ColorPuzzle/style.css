@@ -1,0 +1,115 @@
+.body {
+	background-image: url("https://cdna.artstation.com/p/assets/images/images/003/496/026/large/kailah-valentine-pastelgalaxy.jpg?1474340188");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+.font {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.logo {
+	width: 12vh;
+	height: 12vh;
+	border: 2px darkblue solid;
+	border-radius: 100%;
+}
+
+.container {
+	height: 12vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.titlePage {
+	color: darkblue;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.message {
+	color: black;
+	font-size: 4em;
+}
+
+.playAgain {
+	border-radius: 20px;
+	border: 2px solid #006666;
+	background-color: rgb(255, 255, 255, .7);
+	color: black;
+	font-size: 3em;
+}
+
+/* ********* Calc *********** */
+.game {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 62vh;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 62vh;
+	align-items: center;
+	border: #006666;
+	margin-bottom: 10px;
+	width: 70%;
+}
+
+.pipe {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width:10%;
+	height: 28vh;
+	margin-left: 20px;
+	background-color: rgb(122, 179, 161, 0);
+	border: 3px black solid;
+	border-radius: 7px 7px 20px 20px;
+	padding-top: 1vh;
+}
+
+.cell {
+	height: 7vh;
+	width: 100%;
+	background-color: thistle;
+}
+
+.lastCell {
+	border-radius: 0px 0px 20px 20px;
+}
+
+/* ********** End of page ********* */
+.name {
+	color: darkblue;
+	font-size: 2em;
+}
+
+.end {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.back {
+	font-size: 3em;
+	color: black;
+	border-bottom: 3px darkblue solid;
+	border-left: 3px black solid;
+	padding: 10px;
+	background-color: rgb(122, 179, 161, .5);
+	text-align: center;
+	border-radius: 25px;
+}
